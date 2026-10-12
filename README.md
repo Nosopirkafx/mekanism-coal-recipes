@@ -1,43 +1,43 @@
 # Mekanism: Coal Recipes
 
-Небольшой неофициальный аддон для Mekanism: превращает биотопливо в уголь через новую цепочку переработки.
+A small unofficial Mekanism addon that turns bio fuel into coal through a new processing chain.
 
-| Требование | Версия |
+| Requirement | Version |
 | --- | --- |
 | Minecraft | **1.21.1** |
-| Загрузчик | **NeoForge 21.1.251** |
-| Mekanism | **10.7.x** — проверено на **10.7.19.85** |
+| Mod loader | **NeoForge 21.1.251** |
+| Mekanism | **10.7.x** — tested with **10.7.19.85** |
 | Java | **21** |
 
-## Установка
+## Installation
 
-Скачайте JAR из [Releases](https://github.com/Nosopirkafx/mekanism-coal-recipes/releases) и положите в папку `mods` вместе с Mekanism. На сервере аддон нужен также всем клиентам.
+Download the JAR from [Releases](https://github.com/Nosopirkafx/mekanism-coal-recipes/releases) and place it in your `mods` folder alongside Mekanism. For multiplayer, install the addon on both the server and all clients.
 
-## Рецепты
+## Recipes
 
-| Машина | Вход | Выход |
+| Machine | Input | Output |
 | --- | --- | --- |
-| Герметичная реакционная камера | 4 биотоплива + 100 мБ воды + 100 мБ кислорода | **8 угольных глыб + 50 мБ водорода** |
-| Объединитель | 2 угольные глыбы + 1 камень | **1 угольная руда** |
+| Pressurized Reaction Chamber | 4 Bio Fuel + 100 mB Water + 100 mB Oxygen | **8 Coal Clumps + 50 mB Hydrogen** |
+| Combiner | 2 Coal Clumps + 1 Stone | **1 Coal Ore** |
 
-Далее стандартный обогащающий механизм Mekanism превращает руду в **2 угля**. Рецепты отображаются в JEI; добавлена русская и английская локализация.
+Mekanism's existing Enrichment Chamber recipe then turns the ore into **2 Coal**. Recipes appear in JEI. English and Russian translations are included.
 
-> Для автоматизации настройте **вход предметов** на стороне реакционной камеры, к которой подключён логистический транспортёр. Настройки жидкости и химикатов находятся в отдельных вкладках.
+> For automation, configure the chamber's connected side as an **item input** for the Logistical Transporter. Fluid and chemical inputs have separate configuration tabs.
 
-## Для разработки
+## Development
 
-Нужны Java 21 и доступ к интернету. Сборка:
+Java 21 and an internet connection are required. Build on Windows:
 
 ```powershell
 ./gradlew.bat build
 ```
 
-На Linux/macOS: `./gradlew build`. Готовый JAR появится в `build/libs/`.
+On Linux/macOS, use `./gradlew build`. The JAR is written to `build/libs/`.
 
-- Рецепты: `src/main/resources/data/mek_coal_synthesis/recipe/`.
-- Текстура, модель и переводы: `src/main/resources/assets/mek_coal_synthesis/`.
-- Регистрация предмета: `src/main/java/dev/coalsynthesis/CoalSynthesis.java`.
+- Recipes: `src/main/resources/data/mek_coal_synthesis/recipe/`.
+- Texture, model, and translations: `src/main/resources/assets/mek_coal_synthesis/`.
+- Item registration: `src/main/java/dev/coalsynthesis/CoalSynthesis.java`.
 
-Для запуска тестового клиента положите JAR Mekanism 1.21.1 в `libs/` и выполните `./gradlew.bat runClient`. Внутренний ID `mek_coal_synthesis` сохранён для совместимости с существующими мирами.
+To launch a development client, place the Mekanism 1.21.1 JAR in `libs/` and run `./gradlew.bat runClient`. The internal mod ID remains `mek_coal_synthesis` for compatibility with existing worlds.
 
-Лицензия: [MIT](LICENSE). Проект не связан с командой Mekanism. Текстура создана с помощью ImageGen и подготовлена для игры в размере 32×32.
+License: [MIT](LICENSE). This project is not affiliated with the Mekanism team. The texture was created using ImageGen and prepared as a 32×32 game asset.
