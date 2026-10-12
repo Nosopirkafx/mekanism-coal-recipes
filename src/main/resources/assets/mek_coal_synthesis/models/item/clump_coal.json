@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": { "layer0": "mek_coal_synthesis:item/clump_coal" },
+  "display": {
+    "gui": { "scale": [1.5, 1.5, 1.5] },
+    "fixed": { "scale": [1.5, 1.5, 1.5] }
+  }
+}

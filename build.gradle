@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+version = '1.0.3'
+group = 'dev.coalsynthesis'
+base { archivesName = 'mekanism-coal-recipes' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+neoForge {
+    version = '21.1.251'
+    runs {
+        client { client() }
+        server { server(); programArgument '--nogui' }
+    }
+    mods {
+        mek_coal_synthesis { sourceSet(sourceSets.main) }
+    }
+}
+dependencies {
+    // Put the user's Mekanism 1.21.1 jar in libs for development runs.
+    runtimeOnly fileTree(dir: 'libs', include: ['*.jar'])
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

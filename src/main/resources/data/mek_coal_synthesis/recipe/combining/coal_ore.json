@@ -1,0 +1,6 @@
+{
+  "type": "mekanism:combining",
+  "main_input": { "item": "mek_coal_synthesis:clump_coal", "count": 2 },
+  "extra_input": { "item": "minecraft:stone", "count": 1 },
+  "output": { "id": "minecraft:coal_ore", "count": 1 }
+}
