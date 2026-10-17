@@ -1,9 +1,9 @@
 {
   "type": "mekanism:reaction",
-  "item_input": { "item": "mekanism:bio_fuel", "count": 4 },
-  "fluid_input": { "fluid": "minecraft:water", "amount": 100 },
-  "chemical_input": { "chemical": "mekanism:oxygen", "amount": 100 },
-  "item_output": { "id": "mek_coal_synthesis:clump_coal", "count": 8 },
-  "chemical_output": { "id": "mekanism:hydrogen", "amount": 50 },
-  "duration": 100
+  "item_input": { "item": "mekanism:bio_fuel", "count": 2 },
+  "fluid_input": { "fluid": "minecraft:water", "amount": 500 },
+  "chemical_input": { "chemical": "mekanism:oxygen", "amount": 200 },
+  "item_output": { "id": "mek_coal_synthesis:clump_coal", "count": 1 },
+  "chemical_output": { "id": "mekanism:hydrogen", "amount": 100 },
+  "duration": 600
 }

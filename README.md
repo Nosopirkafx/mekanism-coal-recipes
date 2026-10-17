@@ -17,8 +17,10 @@ Download the JAR from [Releases](https://github.com/Nosopirkafx/mekanism-coal-re
 
 | Machine | Input | Output |
 | --- | --- | --- |
-| Pressurized Reaction Chamber | 4 Bio Fuel + 100 mB Water + 100 mB Oxygen | **8 Coal Clumps + 50 mB Hydrogen** |
-| Combiner | 2 Coal Clumps + 1 Stone | **1 Coal Ore** |
+| Pressurized Reaction Chamber | 2 Bio Fuel + 500 mB Water + 200 mB Oxygen | **1 Coal Clump + 100 mB Hydrogen** |
+| Combiner | 3 Coal Clumps + 1 Stone | **1 Coal Ore** |
+
+The reaction takes **30 seconds (600 ticks)** without speed upgrades.
 
 Mekanism's existing Enrichment Chamber recipe then turns the ore into **2 Coal**. Recipes appear in JEI. English and Russian translations are included.
 
